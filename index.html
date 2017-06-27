@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Thin Skin</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	  crossorigin="anonymous"></script>
+</head>
+<body>
+	<header>
+		<ul class="nav">
+			<li><a href="#first">Teaser</a></li>
+			<li><a href="#second">About</a></li>
+			<li><a href="">Filmmakers</a></li>
+			<li><a href="">Contact</a></li>
+			<li><a href="">Blog</a></li>
+			<li><a href="">HOME</a></li>
+		</ul>
+	</header>
+	<div>
+		<section id="first">
+			
+		</section>
+		<section id="second">
+			
+		</section>
+	</div>
+	<script>
+		$(document).ready(function() {
+			console.log("hit it");
+			$('a[href^="#"]').click(function(e) {
+				e.preventDefault();
+				var selector = $(this).attr("href");
+				$('html,body').animate({scrollTop: $(selector).offset().top }, 500);
+			});
+		});
+	</script>
+</body>
+</html>
