@@ -37,22 +37,54 @@ ul.nav li a {
 	text-transform: uppercase;
 	font-family: FranklinGothicCondensed;
 }
+/*        NAV ENDS              */
 
-/*        NAV ENDS              */       
+/*        DONATE BUTTON STARTS  */
 
+#donate {
+	position: fixed;
+	bottom: 10%;
+	z-index: 10;
+}
+
+/*        DONATE BUTTON END     */
 
 /*        SECTIONS STARTS       */
+section#home {
+	background-image: url("../imgs/homebg.jpg");
+	min-height: 1000px;
 
-section#first {
-	display: block;
-	height: 4000px;
-	background-color: red;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
-section#second {
-	display: block;
-	height: 4000px;
-	background-color: blue;
+section#home p {
+	position: absolute;
+	left: 45%;
+	top: 50%;
+	max-width: 20%;
+	color: red;
 }
 
+section#bios {
+	padding: 100px 80px;
+	background-color: white;
+	text-align: justify;
+}
+
+section#bios h3 {
+	text-align: center;
+}
+
+section#third {
+	background-image: url("../imgs/About-bg.jpg");
+	min-height: 400px;
+
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 /*        SECTIONS ENDS         */
