@@ -8,19 +8,33 @@
 	src: url(fonts/FranklinGothic-Condensed.otf);
 }
 
+/*        TEXT CONTROL BEGINS   */
+
+/*
+	1) Create a container class
+	2) each p tag takes up 100% of parent, text align center/ or maybe right
+	3) wrap words in text control tags, find those
+		 these tags are used to control the style of titles and names
+
+
+*/
+
+/*        TEXT CONTROL ENDS     */
+
 /*        NAV BEGINS            */
 ul.nav {
 	list-style-type: none;
 	list-style: none;
 	display: inline-block;
 	text-align: center;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: black;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black;
+	z-index: 20;
 }
 
 ul.nav li {
@@ -63,9 +77,9 @@ section#home {
 section#home p {
 	position: absolute;
 	left: 45%;
-	top: 50%;
-	max-width: 20%;
-	color: red;
+	margin-top 20%; /*This isnt working on load need another way to center in parent*/
+	color: #fff200;
+	font-size: 37px;
 }
 
 section#bios {
