@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 	color: inherit;
+	box-sizing: border-box;
 }
 
 @font-face {
@@ -11,8 +12,12 @@
 
 html, body {
 	font-family: FranklinGothicCondensed;
-	color: #fff200;
+	color: #C0C080;
 }
+
+/*0066b3 blue*/
+/*C0C080 dark yellow*/
+/*fff200 original yellow*/
 
 /*        TEXT CONTROL BEGINS   */
 
@@ -25,6 +30,7 @@ html, body {
 
 h1, h2, h3 {
 	-webkit-font-smoothing: antialiased;
+	color: #fff200;
 }
 
 h1 {
@@ -41,6 +47,22 @@ h3 {
 
 p {
 	font-size: 28px;
+	text-shadow: 2px 2px #0066b3;
+}
+
+.poster {
+	font-size: 50px;
+	text-align: right;
+}
+
+.poster span {
+	display: block;
+	width: 100%;
+}
+
+.poster span strong {
+	font-size: 67px;
+	font-weight: normal;
 }
 
 /*        TEXT CONTROL ENDS     */
@@ -58,7 +80,10 @@ ul.nav {
   top: 0;
   width: 100%;
   background-color: black;
+	background-color: black;
+  box-shadow: 0 0 5px 5px black;
 	z-index: 20;
+	color: #fff200;
 }
 
 ul.nav li {
@@ -66,7 +91,7 @@ ul.nav li {
 }
 
 ul.nav li a {
-	font-size: 250%;
+	font-size: 50px;
 	display: inline-block;
 	text-align: center;
 	padding: 14px 16px;
@@ -89,10 +114,9 @@ ul.nav li a {
 /*        SECTIONS STARTS       */
 
 .separator {
-	padding: 100px 80px;
 	background-color: #333333;
 	text-align: justify;
-	height: 100px;
+	height: 60px;
 }
 
 section.bg {
@@ -104,19 +128,19 @@ section.bg {
 
 section#home {
 	background-image: url("../imgs/homebg.jpg");
+	box-sizing: border-box;
+	padding-top: 7%;
 }
 
-section#home p {
-	position: absolute;
-	color: #fff200;
-	font-size: 37px;
-	padding-left: 50%;
-	padding-right: 5%;
-	padding-top: 20%;
+section#home div.row {
+	/*position: absolute;
+	top: 20%;*/
 }
 
-section#home img {
+section#home div img {
 	display: block;
+	-webkit-filter: drop-shadow(0px 0px 20px #fff200);
+	filter:         drop-shadow(0px 0px 20px #fff200);
 }
 
 section#teaser {
@@ -140,7 +164,72 @@ section#about {
 	background-image: url("../imgs/About-bg.jpg");
 }
 
+section#about h2 {
+	text-align: left;
+}
+
+section#about row {
+	text-align: justify;
+}
+
+section#about p {
+	font-size: 37px;
+}
+
+section#about p:not(:first-of-type) {
+	margin-top: 30px;
+}
+
+section#about p:last-child {
+	margin-bottom: 50px;
+}
+
 section#bios {
 	background-image: url("../imgs/filmmakersbg.jpg");
 }
+
+section#bios img {
+	float: right;
+}
 /*        SECTIONS ENDS         */
+
+/*        RESPONSIVE CLASSES    */
+
+.top5 { margin-top:5px; }
+.top7 { margin-top:7px; }
+.top10 { margin-top:10px; }
+.top15 { margin-top:15px; }
+.top17 { margin-top:17px; }
+.top30 { margin-top:30px; }
+
+.col-1 { width: 8.33%; }
+.col-2 { width: 16.66%; }
+.col-3 { width: 25%; }
+.col-4 { width: 33.33%; }
+.col-5 { width: 41.66%; }
+.col-6 { width: 50%; }
+.col-7 { width: 58.33%; }
+.col-8 { width: 66.66%; }
+.col-9 { width: 75%; }
+.col-10 { width: 83.33%; }
+.col-11 { width: 91.66%; }
+.col-12 { width: 100%; }
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    /*border: 1px solid red;*/
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
