@@ -1,11 +1,17 @@
 * {
 	margin: 0;
 	padding: 0;
+	color: inherit;
 }
 
 @font-face {
 	font-family: FranklinGothicCondensed;
 	src: url(fonts/FranklinGothic-Condensed.otf);
+}
+
+html, body {
+	font-family: FranklinGothicCondensed;
+	color: #fff200;
 }
 
 /*        TEXT CONTROL BEGINS   */
@@ -15,9 +21,27 @@
 	2) each p tag takes up 100% of parent, text align center/ or maybe right
 	3) wrap words in text control tags, find those
 		 these tags are used to control the style of titles and names
-
-
 */
+
+h1, h2, h3 {
+	-webkit-font-smoothing: antialiased;
+}
+
+h1 {
+	font-size: 119px;
+}
+
+h2 {
+	font-size: 89px;
+}
+
+h3 {
+	font-size: 50px;
+}
+
+p {
+	font-size: 28px;
+}
 
 /*        TEXT CONTROL ENDS     */
 
@@ -43,13 +67,11 @@ ul.nav li {
 
 ul.nav li a {
 	font-size: 250%;
-	color: #fff200;
 	display: inline-block;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
 	text-transform: uppercase;
-	font-family: FranklinGothicCondensed;
 }
 /*        NAV ENDS              */
 
@@ -63,42 +85,62 @@ ul.nav li a {
 
 /*        DONATE BUTTON END     */
 
-/*        SECTIONS STARTS       */
-section#home {
-	background-image: url("../imgs/homebg.jpg");
-	min-height: 1000px;
 
+/*        SECTIONS STARTS       */
+
+.separator {
+	padding: 100px 80px;
+	background-color: #333333;
+	text-align: justify;
+	height: 100px;
+}
+
+section.bg {
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+section#home {
+	background-image: url("../imgs/homebg.jpg");
 }
 
 section#home p {
 	position: absolute;
-	left: 45%;
-	margin-top 20%; /*This isnt working on load need another way to center in parent*/
 	color: #fff200;
 	font-size: 37px;
+	padding-left: 50%;
+	padding-right: 5%;
+	padding-top: 20%;
+}
+
+section#home img {
+	display: block;
+}
+
+section#teaser {
+	display: block;
+	padding: 50px;
+	background-color: #333333;
+}
+
+section#teaser iframe {
+	display: block;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+section#teaser h2 {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+section#about {
+	background-image: url("../imgs/About-bg.jpg");
 }
 
 section#bios {
-	padding: 100px 80px;
-	background-color: white;
-	text-align: justify;
-}
-
-section#bios h3 {
-	text-align: center;
-}
-
-section#third {
-	background-image: url("../imgs/About-bg.jpg");
-	min-height: 400px;
-
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+	background-image: url("../imgs/filmmakersbg.jpg");
 }
 /*        SECTIONS ENDS         */
