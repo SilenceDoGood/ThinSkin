@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "ThinSkin"
+AuthUserFile "/home/michaelseiwerath/.htpasswds/public_html/ThinSkin/passwd"
+require valid-user

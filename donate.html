@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Thin Skin-DONATE</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	  crossorigin="anonymous"></script>
+</head>
+<body>
+	<header>
+		<ul class="nav">
+			<li><a href="#teaser">Teaser</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#bios">Filmmakers</a></li>
+			<li><a href="#contact">Contact</a></li>
+			<li><a href="">Blog</a></li>
+			<li><a href="#home">HOME</a></li>
+		</ul>
+	</header>
+	<div class="container">
+		<section id="home" class="bg">
+			<div class="row">
+				<span class="col-6"></span>
+				<img class="col-5" src="imgs/ts-title.png">
+				<span class="col-1"></span>
+			</div>
+			<div class="row">
+				<span class="col-4"></span>
+				<div class="col-7 poster">
+<p> ...when the one thing holding you together</p>		
+<p> starts falling apart...</p>
+<br>					
+
+				</div>
+				<span class="col-1"></span>
+			</div>
+		</section>
+
+		<div class="separator"></div>
+
+		<section id="bios" class="bg">
+				<div class="row">
+					<span class="col-3"></span>
+					<span class="col-3"><h2>Support THIN SKIN!</h2></span>
+					<span class="col-6"></span>
+				</div>
+				<div class="row">
+						<span class="col-4"></span>
+						<div class="col-7">
+							
+<p>Thin Skin is powered by the stories and the people of Seattle. It's an independent film about an independent place and personality. Our film is set in Seattle. It will be shot in Seattle. It tells a uniquely Seattle story about Ahamefule J. Oluo, a native Seattleite who committed deeply to Seattle's cultural life. Most of our actors, writers, director and producers -  Aham, Lindy West, Hari Kondabolu, Charles Mudede, Zia Mohajerjasbi, Michael Seiwerath and Jennessa West - live and work in Seattle. Yet we make our mark nationally and internationally in film, music, theater, comedy, writing and literature.</p>
+
+<p>Seattle is our home, and our film has a distinct Northwest voice. But we know that anyone - no matter who they are or where they live - can connect with Aham's story. We need you to bring that story to life on film.<p>
+
+<p>We will make Thin Skin for just $450,000, and we are bringing together a passionate group of cultural investors from our home city to make it happen. And that includes you!</p>
+
+<p>We need to raise $100,000 of our overall budget this summer outside our investments. Every cent of this $100,000 will go towards casting the movie and hiring Seattle's excellent crew that will bring this unique vision to the screen.</p>
+
+<p>This isn't just our film - it's your film, Seattle, and any contribution made to our tax-deductible production fund housed at the Northwest Film Forum will help make it happen.</p>
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="ZSJXDGMVJ2FMY">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+						</div>
+						<span class="col-1"></span>
+				</div>
+		</section>
+
+		<div class="separator"></div>
+
+	
+				</div>
+			</div>
+		</section>
+	</div>
+
+
+
+
+	<footer>
+
+	</footer>
+	<script>
+		$(document).ready(function() {
+			$('a[href^="#"]').click(function(e) {
+				e.preventDefault();
+				var selector = $(this).attr("href");
+				var section = $(selector);
+				if(section.length)
+					$('html,body').animate({ scrollTop: $(selector).offset().top - 50 }, 500);
+			});
+
+			$(window).resize(function() {
+				resizeVideos();
+				resizeSections();
+			});
+
+			function resizeVideos() {
+				$("iframe").each(function(index, element) {
+					var ratio = 16/9;
+					element = $(element);
+					element.width($(window).width() * 0.7);
+					element.height(element.width() / ratio);
+				});
+			}
+
+			function resizeSections() {
+				// var sections = [ "section#home" ];
+				// $.each(sections, function(index, element) {
+				// 	var height = $(window).height();
+				// 	$(element).css({'height': height + 'px' });
+				// });
+			}
+
+			resizeSections();
+			resizeVideos();
+		});
+	</script>
+</body>
+</html>

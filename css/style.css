@@ -38,7 +38,7 @@ h1 {
 }
 
 h2 {
-	font-size: 89px;
+	font-size: 46px;
 }
 
 h3 {
@@ -46,12 +46,12 @@ h3 {
 }
 
 p {
-	font-size: 28px;
+	font-size: 22px;
 	text-shadow: 2px 2px #0066b3;
 }
 
 .poster {
-	font-size: 50px;
+	font-size: 24px;
 	text-align: right;
 }
 
@@ -61,7 +61,7 @@ p {
 }
 
 .poster span strong {
-	font-size: 67px;
+	font-size: 32px;
 	font-weight: normal;
 }
 
@@ -91,7 +91,7 @@ ul.nav li {
 }
 
 ul.nav li a {
-	font-size: 50px;
+	font-size: 30px;
 	display: inline-block;
 	text-align: center;
 	padding: 14px 16px;
@@ -139,8 +139,7 @@ section#home div.row {
 
 section#home div img {
 	display: block;
-	-webkit-filter: drop-shadow(0px 0px 20px #fff200);
-	filter:         drop-shadow(0px 0px 20px #fff200);
+	
 }
 
 section#teaser {
@@ -173,7 +172,7 @@ section#about row {
 }
 
 section#about p {
-	font-size: 37px;
+	font-size: 24px;
 }
 
 section#about p:not(:first-of-type) {
