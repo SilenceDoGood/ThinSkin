@@ -10,9 +10,15 @@
 	src: url(fonts/FranklinGothic-Condensed.otf);
 }
 
+@font-face {
+	font-family: FranklinBook;
+	src: url(fonts/FranklinGothicITCbyBT-Book.otf);
+}
+
 html, body {
 	font-family: FranklinGothicCondensed;
-	color: #C0C080;
+	/*color: #C0C080;*/
+	color: #fff200;
 }
 
 /*0066b3 blue*/
@@ -39,6 +45,7 @@ h1 {
 
 h2 {
 	font-size: 46px;
+	text-transform: uppercase;
 }
 
 h3 {
@@ -47,7 +54,6 @@ h3 {
 
 p {
 	font-size: 22px;
-	text-shadow: 2px 2px #0066b3;
 }
 
 .poster {
@@ -80,7 +86,6 @@ ul.nav {
   top: 0;
   width: 100%;
   background-color: black;
-	background-color: black;
   box-shadow: 0 0 5px 5px black;
 	z-index: 20;
 	color: #fff200;
@@ -119,6 +124,10 @@ ul.nav li a {
 	height: 60px;
 }
 
+section {
+	display: block;
+}
+
 section.bg {
 	background-attachment: fixed;
 	background-position: center;
@@ -139,7 +148,6 @@ section#home div.row {
 
 section#home div img {
 	display: block;
-	
 }
 
 section#teaser {
@@ -155,8 +163,7 @@ section#teaser iframe {
 }
 
 section#teaser h2 {
-	text-align: center;
-	text-transform: uppercase;
+	text-align: left;
 }
 
 section#about {
@@ -179,17 +186,54 @@ section#about p:not(:first-of-type) {
 	margin-top: 30px;
 }
 
-section#about p:last-child {
+section#about .pill {
 	margin-bottom: 50px;
+}
+
+.pill {
+	background: rgba(192, 192, 192, 0.65);
+	border-radius: 2px;
+	margin-top: 15px;
 }
 
 section#bios {
 	background-image: url("../imgs/filmmakersbg.jpg");
 }
 
+section#bios h2 {
+	text-align: center;
+}
+
+section#bios div p:nth-child(2) {
+	margin-top: 5px;
+}
+
+section#bios div p:last-child {
+	margin-top: 15px;
+	font-family: FranklinBook;
+}
+
+section#bios div.row {
+	margin-bottom: 15px;
+}
+
 section#bios img {
 	float: right;
 }
+
+section#support {
+	background-image: url("../imgs/filmmakersbg.jpg");
+}
+
+section#support h2 {
+	text-align: center;
+}
+
+section#support div p {
+	margin-bottom: 20px;
+}
+
+
 /*        SECTIONS ENDS         */
 
 /*        RESPONSIVE CLASSES    */
