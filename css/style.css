@@ -283,7 +283,6 @@ section#bios img {
 section#support {
 	background-image: url("../imgs/filmmakersbg.jpg");
 	display: inline-block;
-	position: absolute;
 }
 
 section#support h2 {
@@ -308,25 +307,102 @@ section#support div p {
 
 /*        SECTIONS ENDS         */
 
+/*        FORM STARTS           */
+
+form {
+  padding: 25px;
+  font-family: FranklinBook;
+}
+
+.form-control {
+  font-size: 21px;
+  margin-bottom: 21px;
+}
+
+.form-control label {
+  margin-bottom: 15px;
+}
+
+.form-control input {
+	border-style: inset;
+	border-color: #A9A9A9;
+	border-radius: 4px;
+	border-width: 4px;
+  width: 100%;
+  font-size: 21px;
+  padding: 5px;
+  color: black;
+}
+
+.form-control button {
+  font-family: Courier;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 21px;
+  text-align: center;
+  font-weight: bold;
+
+  padding: 15px 32px;
+  display: inline-block;
+  background-color: #0066b3;
+  float: left;
+  border: none;
+	border-style: outset;
+	border-radius: 4px;
+	border-width: 4px;
+}
+
+.form-control button:hover {
+	border-style: inset;
+}
+
+input.form-validation {
+
+}
+
+@media only screen and (max-width: 768px) {
+  .form-control button {
+    width: 100%;
+    font-size: 28px;
+  }
+}
+
+/*        FORM ENDS             */
+
+
 /*        TABLES STARTS         */
 
 table {
-  border-collapse: collapse;
   width: 100%;
 	position: relative;
+	color: black;
 }
 
-table td {
-	border: 0;
+table th {
+	background-color: #0066b3;
 }
 
 th, td {
+	border-style: outset;
+	border-width: 2px;
+	border-color: #e2e6e9;
   text-align: left;
   padding: 8px;
+	border: 0;
+	font-size: 28px;
 }
 
-tr:nth-child(even) {
-  background-color: #f2f2f2;
+tr {
+	background-color: white
+}
+
+tbody tr:hover {
+	background:#BDC3C7;
+  color:#FFFFFF;
+}
+
+tr:nth-child(odd) {
+	background-color: #fff2dd;
 }
 
 /*        TABLES END            */

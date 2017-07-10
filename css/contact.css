@@ -1,57 +1,7 @@
 /*        CONTACT STARTS        */
 
-div#contact {
-}
-
 body {
   background-color: #333333;
-}
-
-form {
-  padding: 25px;
-  font-family: FranklinBook;
-}
-
-.form-control {
-  font-size: 21px;
-  margin-bottom: 21px;
-}
-
-.form-control label {
-  margin-bottom: 15px;
-}
-
-.form-control input {
-  width: 100%;
-  font-size: 21px;
-  padding: 5px;
-}
-
-
-.form-control button {
-  font-family: Courier;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 21px;
-  text-align: center;
-  font-weight: bold;
-
-  padding: 15px 32px;
-  display: inline-block;
-  background-color: #0066b3;
-  float: left;
-  border: none;
-}
-
-input.form-validation {
-
-}
-
-@media only screen and (max-width: 768px) {
-  .form-control button {
-    width: 100%;
-    font-size: 28px;
-  }
 }
 
 /*        CONTACT ENDS          */
