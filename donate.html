@@ -12,7 +12,7 @@
 <body>
 
 	<header>
-		<ul class="nav">
+		<ul id="nav" class="nav">
 			<li><a href="index.html#home">HOME</a></li>
 			<li><a href="index.html#teaser">Teaser</a></li>
 			<li><a href="index.html#about">About</a></li>
@@ -20,48 +20,53 @@
 			<li><a href="index.html#bios">Filmmakers</a></li>
 			<li><a href="/">Blog</a></li>
 			<li><a href="#">DONATE</a></li>
+			<li><a style="font-size:15px;" class="icon">&#9776;</a></li>
 		</ul>
 	</header>
 
 	<div class="container">
-		<section id="home" class="bg">
-			<div class="row">
+		<section id="support" class="bg">
+			<div class="row top100">
 				<span class="col-6"></span>
 				<img class="col-5" src="imgs/ts-title.png" alt="">
 				<span class="col-1"></span>
 			</div>
 			<div class="row">
-				<span class="col-4"></span>
-				<div class="col-7 poster">
-					<p> ...when the one thing holding you together</p>
-					<p> starts falling apart...</p>
-				</div>
-				<span class="col-1"></span>
-			</div>
-		</section>
+				<div class="col-6"></div>
+				<div class="col-5 pill bottom30">
+					<p>Thin Skin is an independent film that will be shot in Seattle.
+						It is independent in the way it was conceived, written,
+						and developed. The film tells a uniquely Seattle story about
+						Ahamefule J. Oluo, a Seattleite, father, musician, and comedian
+						 who is deeply committed to Seattle's cultural life.</p>
 
-		<div class="separator"></div>
+					<p>Our actors, writers, director and producers - Aham, Lindy West,
+						Hari Kondabolu, Charles Mudede, Zia Mohajerjasbi, Michael Seiwerath
+						and Jennessa West - live and work or have reputations that were
+						made in Seattle. Yet we make our mark nationally and internationally
+						 in film, music, theater, comedy, writing and literature.</p>
 
-		<section id="support" class="bg">
-			<div class="row">
-				<span class="col-3"></span>
-				<span class="col-3"><h2>Support THIN SKIN!</h2></span>
-				<span class="col-6"></span>
-			</div>
-			<div class="row">
-				<span class="col-4"></span>
-				<div class="col-7 pill bottom30">
-					<p>Thin Skin is powered by the stories and the people of Seattle. It's an independent film about an independent place and personality. Our film is set in Seattle. It will be shot in Seattle. It tells a uniquely Seattle story about Ahamefule J. Oluo,
-						a native Seattleite who committed deeply to Seattle's cultural life. Most of our actors, writers, director and producers - Aham, Lindy West, Hari Kondabolu, Charles Mudede, Zia Mohajerjasbi, Michael Seiwerath and Jennessa West - live and work in
-						Seattle. Yet we make our mark nationally and internationally in film, music, theater, comedy, writing and literature.</p>
+					<p>Seattle is our home, and our film has a distinct Northwest voice.
+						But we know that anyone - no matter who they are or where they live
+						- can connect with Aham's story. <strong>We need you to bring that
+						story to life on film.</strong> </p>
 
-					<p>Seattle is our home, and our film has a distinct Northwest voice. But we know that anyone - no matter who they are or where they live - can connect with Aham's story. We need you to bring that story to life on film.</p>
+					<p>We will make Thin Skin for just $450,000, and we are bringing
+						together a passionate group of cultural investors from our home
+						city to make it happen. And that includes you!</p>
 
-					<p>We will make Thin Skin for just $450,000, and we are bringing together a passionate group of cultural investors from our home city to make it happen. And that includes you!</p>
+					<p>We need to raise $100,000 of our overall budget this summer
+						outside our investments. Every cent of this $100,000 will go
+						towards casting the movie with primarily local talent, and hiring
+						excellent local crew from Seattle to bring this unique vision to
+						the screen.</p>
 
-					<p>We need to raise $100,000 of our overall budget this summer outside our investments. Every cent of this $100,000 will go towards casting the movie and hiring Seattle's excellent crew that will bring this unique vision to the screen.</p>
-
-					<p>This isn't just our film - it's your film, Seattle, and any contribution made to our tax-deductible production fund housed at the Northwest Film Forum will help make it happen.</p>
+						<p>This isn't just our film - it's your film, Seattle. It is
+							powered by the people and the stories of our city, and any
+							contribution made to our tax-deductible production fund housed
+							at the Northwest Film Forum will help make it happen. If you are
+							interested in making an equity investment in the film, please
+							 contact <a href="mailto:thinskinmovie@gmail.com">Michael Seiwerath</a></p>
 
 					<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 						<input type="hidden" name="cmd" value="_s-xclick">
@@ -69,53 +74,12 @@
 						<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
 						<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 					</form>
-
 				</div>
 				<span class="col-1"></span>
 			</div>
 		</section>
-
-		<div class="separator"></div>
-
 	</div>
 
-	<script>
-		$(document).ready(function() {
-			$('a[href^="#"]').click(function(e) {
-				e.preventDefault();
-				var selector = $(this).attr("href");
-				var section = $(selector);
-				if (section.length)
-					$('html,body').animate({
-						scrollTop: $(selector).offset().top - 50
-					}, 500);
-			});
-
-			$(window).resize(function() {
-				resizeVideos();
-				resizeSections();
-			});
-
-			function resizeVideos() {
-				$("iframe").each(function(index, element) {
-					var ratio = 16 / 9;
-					element = $(element);
-					element.width($(window).width() * 0.7);
-					element.height(element.width() / ratio);
-				});
-			}
-
-			function resizeSections() {
-				// var sections = [ "section#home" ];
-				// $.each(sections, function(index, element) {
-				// 	var height = $(window).height();
-				// 	$(element).css({'height': height + 'px' });
-				// });
-			}
-
-			resizeSections();
-			resizeVideos();
-		});
-	</script>
+	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
