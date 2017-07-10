@@ -332,6 +332,7 @@ form {
   font-size: 21px;
   padding: 5px;
   color: black;
+	transition: border-color 2s, color 2s
 }
 
 .form-control button {
@@ -356,8 +357,19 @@ form {
 	border-style: inset;
 }
 
-input.form-validation {
+span.form-validation-error {
+	color: red;
+	height: 1em;
+}
 
+input.form-validation {
+	border-color: red;
+	color: red;
+}
+
+input.form-success {
+	border-color: green;
+	color: green;
 }
 
 .paypalbutton {
