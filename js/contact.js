@@ -15,6 +15,7 @@ $(document).ready(function() {
       button.siblings('p').text('Thank you for your interest in the Thin Skin Movie, expect updates soon!');
       inputs.each(function(index, element) {
         $(element).addClass("form-success");
+        $(element).siblings("span").text("");
       });
     }).fail(function(data) {
       var errors = $.parseJSON(data.responseText)["errors"];
